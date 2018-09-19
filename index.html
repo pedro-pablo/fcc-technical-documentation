@@ -1,184 +1,186 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Basic Javascript Documentation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Basic Javascript Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
+
 <body>
-    <nav id="navbar">
-        <header>Basic Javascript Documentation</header>
-        <ul>
-          <li><a class="nav-link" href="#What_is_Javascript?">What is Javascript?</a></li>
-          <li><a class="nav-link" href="#Variables">Variables</a></li>
-          <li><a class="nav-link" href="#Operators">Operators</a></li>
-          <li><a class="nav-link" href="#Conditionals">Conditionals</a></li>
-          <li><a class="nav-link" href="#Functions">Functions</a></li>
-        </ul>
-        <footer>
-          All information in this page was taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">MDN</a>.
-        </footer>
-      </nav>
-      <main id="main-doc">
-        <section id="What_is_Javascript?" class="main-section">
-          <header>What is Javascript?</header>
-          <p>
-            JavaScript (JS) is a lightweight interpreted or JIT-compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB
-            and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
-          </p>
-        </section>
-        <section id="Variables" class="main-section">
-          <header>Variables</header>
-          <p>
-            Variables are containers that you can store values in. You start by declaring a variable with the var keyword, followed by any name you want to call it:
-          </p>
-          <ul>
-            <li>
-              <code><span class="code-keyword">var</span> myVariable;</code>
-            </li>
-          </ul>
-          <p>After declaring a variable, you can give it a value:</p>
-          <ul>
-            <li>
-              <code>myVariable = <span class="code-string">'Bob'</span>;</code>
-            </li>
-          </ul>
-        </section>
-        <section id="Operators" class="main-section">
-          <header>Operators</header>
-          <p>
-            An operator is a mathematical symbol which produces a result based on two values (or variables). In the following table you can see some of the simplest operators, along with some examples to try out in the JavaScript console.
-          </p>
-          <table>
-            <tr>
-              <th>Operator</th>
-              <th>Explanation</th>
-              <th>Symbol(s)</th>
-              <th>Example</th>
-            </tr>
-            <tr>
-              <td>Addition</td>
-              <td>Used to add two numbers together or glue two strings together.</td>
-              <td>+</td>
-              <td>
-                <ul>
-                  <li>6 + 9;</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>Subtraction, Multiplication, Division</td>
-              <td>These do what you'd expect them to do in basic math.</td>
-              <td>-, *, /</td>
-              <td>
-                <ul>
-                  <li>9 - 3;</li>
-                  <li>8 * 2; // multiply in JS is an asterisk</li>
-                  <li>9 / 3;</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>Assignment</td>
-              <td>You've seen this already: it assigns a value to a variable.</td>
-              <td>=</td>
-              <td>
-                <ul>
-                  <li>var myVariable = 'Bob';</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>Equality</td>
-              <td>Does a test to see if two values are equal to one another and returns a true/false (Boolean) result.</td>
-              <td>===</td>
-              <td>
-                <ul>
-                  <li>var myVariable = 3;</li>
-                  <li>myVariable === 4;</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>Not, Does-not-equal</td>
-              <td>Returns the logically opposite value of what it precedes; it turns a true into a false, etc. When it is used alongside the Equality operator, the negation operator tests whether two values are not equal.</td>
-              <td>!, !==</td>
-              <td>
-                <p>
-                  The basic expression is true, but the comparison returns false because we've negated it:
-                </p>
-                <ul>
-                  <li>var myVariable = 3;</li>
-                  <li>!(myVariable === 3);</li>
-                </ul>
-                <p>
-                  Here we are testing "is myVariable NOT equal to 3". This returns false because myVariable IS equal to 3.
-                </p>
-                <ul>
-                  <li>var myVariable = 3;</li>
-                  <li>myVariable !== 3;</li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </section>
-        <section id="Conditionals" class="main-section">
-          <header>Conditionals</header>
-          <p>
-            Conditionals are code structures which allow you to test if an expression returns true or not, running alternative code revealed by its result. A very common form of conditionals is the if ... else statement. For example:
-          </p>
-          <code>
+  <nav id="navbar">
+    <header>Basic Javascript Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#What_is_Javascript?">What is Javascript?</a></li>
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li><a class="nav-link" href="#Operators">Operators</a></li>
+      <li><a class="nav-link" href="#Conditionals">Conditionals</a></li>
+      <li><a class="nav-link" href="#Functions">Functions</a></li>
+    </ul>
+    <footer>
+      All information in this page was taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics"
+        target="_blank">MDN</a>.
+    </footer>
+  </nav>
+  <main id="main-doc">
+    <section id="What_is_Javascript?" class="main-section">
+      <header>What is Javascript?</header>
+      <p>
+        JavaScript (JS) is a lightweight interpreted or JIT-compiled programming language with first-class functions.
+        While it is most well-known as the scripting language for Web pages, many non-browser environments also use it,
+        such as Node.js, Apache CouchDB
+        and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, dynamic language, supporting
+        object-oriented, imperative, and declarative (e.g. functional programming) styles.
+      </p>
+    </section>
+    <section id="Variables" class="main-section">
+      <header>Variables</header>
+      <p>
+        Variables are containers that you can store values in. You start by declaring a variable with the var keyword,
+        followed by any name you want to call it:
+      </p>
+      <code><span class="code-keyword">var</span> myVariable;</code>
+      <p>After declaring a variable, you can give it a value:</p>
+      <code>myVariable = <span class="code-string">'Bob'</span>;</code>
+    </section>
+    <section id="Operators" class="main-section">
+      <header>Operators</header>
+      <p>
+        An operator is a mathematical symbol which produces a result based on two values (or variables). In the
+        following table you can see some of the simplest operators, along with some examples to try out in the
+        JavaScript console.
+      </p>
+      <table>
+        <tr>
+          <th>Operator</th>
+          <th>Explanation</th>
+          <th>Symbol(s)</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>Addition</td>
+          <td>Used to add two numbers together or glue two strings together.</td>
+          <td>+</td>
+          <td>
+            <ul>
+              <li>6 + 9;</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Subtraction, Multiplication, Division</td>
+          <td>These do what you'd expect them to do in basic math.</td>
+          <td>-, *, /</td>
+          <td>
+            <ul>
+              <li>9 - 3;</li>
+              <li>8 * 2; // multiply in JS is an asterisk</li>
+              <li>9 / 3;</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>You've seen this already: it assigns a value to a variable.</td>
+          <td>=</td>
+          <td>
+            var myVariable = 'Bob';
+          </td>
+        </tr>
+        <tr>
+          <td>Equality</td>
+          <td>Does a test to see if two values are equal to one another and returns a true/false (Boolean) result.</td>
+          <td>===</td>
+          <td>
+            var myVariable = 3;
+            myVariable === 4;
+          </td>
+        </tr>
+        <tr>
+          <td>Not, Does-not-equal</td>
+          <td>Returns the logically opposite value of what it precedes; it turns a true into a false, etc. When it is
+            used alongside the Equality operator, the negation operator tests whether two values are not equal.</td>
+          <td>!, !==</td>
+          <td>
+            <p>
+              The basic expression is true, but the comparison returns false because we've negated it:
+            </p>
+            <ul>
+              <li>var myVariable = 3;</li>
+              <li>!(myVariable === 3);</li>
+            </ul>
+            <p>
+              Here we are testing "is myVariable NOT equal to 3". This returns false because myVariable IS equal to 3.
+            </p>
+            <ul>
+              <li>var myVariable = 3;</li>
+              <li>myVariable !== 3;</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section id="Conditionals" class="main-section">
+      <header>Conditionals</header>
+      <p>
+        Conditionals are code structures which allow you to test if an expression returns true or not, running
+        alternative code revealed by its result. A very common form of conditionals is the if ... else statement. For
+        example:
+      </p>
+      <code>
             <span class="code-keyword">var</span> iceCream = <span class="code-string">'chocolate'</span>;<br>
             <span class="code-keyword">if</span> (iceCream === <span class="code-string">'chocolate'</span>) {<br> &nbsp;&nbsp;
             <span class="code-function">alert</span>(<span class="code-string">'Yay, I love chocolate ice cream!'</span>);<br> } <span class="code-keyword">else</span> {<br> &nbsp;&nbsp;
             <span class="code-function">alert</span>(<span class="code-string">'Awwww, but chocolate is my favorite...'</span>);<br> }
           </code>
-        </section>
-        <section id="Functions" class="main-section">
-          <header>Functions</header>
-          <p>
-            Functions are a way of packaging functionality that you wish to reuse. When you need the procedure you can call a function, with the function name, instead of rewriting the entire code each time. You have already seen some uses of functions above, for
-            example:
-          </p>
-          <ul>
-            <li>
-              <code>
-                <span class="code-keyword">var</span> myVariable = document.<span class="code-function">querySelector(<span class="code-string">'h1'</span>);
-              </code>
-            </li>
-            <li>
-              <code>
-                <span class="code-function">alert</span>(<span class="code-string">'hello!'</span>);
-              </code>
-            </li>
-          </ul>
-          <p>
-            These functions, document.querySelector and alert, are built into the browser for you to use whenever you desire.<br>
-            <br> If you see something which looks like a variable name, but has parentheses — () — after it, it is likely a function. Functions often take arguments — bits of data they need to do their job. These go inside the parentheses, separated by commas
-            if there is more than one argument.<br>
-            <br> For example, the alert() function makes a pop-up box appear inside the browser window, but we need to give it a string as an argument to tell the function what to write in the pop-up box.<br>
-            <br> The good news is you can define your own functions — in this next example we write a simple function which takes two numbers as arguments and multiplies them:
-          </p>
-          <code>
+    </section>
+    <section id="Functions" class="main-section">
+      <header>Functions</header>
+      <p>
+        Functions are a way of packaging functionality that you wish to reuse. When you need the procedure you can call
+        a function, with the function name, instead of rewriting the entire code each time. You have already seen some
+        uses of functions above, for
+        example:
+      </p>
+      <code>
+        <span class="code-keyword">var</span> myVariable = document.<span class="code-function">querySelector(<span class="code-string">'h1'</span>);
+      </code>
+      <code>
+        <span class="code-function">alert</span>(<span class="code-string">'hello!'</span>);
+      </code>
+      <p>
+        These functions, document.querySelector and alert, are built into the browser for you to use whenever you
+        desire.<br>
+        <br> If you see something which looks like a variable name, but has parentheses — () — after it, it is likely a
+        function. Functions often take arguments — bits of data they need to do their job. These go inside the
+        parentheses, separated by commas
+        if there is more than one argument.<br>
+        <br> For example, the alert() function makes a pop-up box appear inside the browser window, but we need to give
+        it a string as an argument to tell the function what to write in the pop-up box.<br>
+        <br> The good news is you can define your own functions — in this next example we write a simple function which
+        takes two numbers as arguments and multiplies them:
+      </p>
+      <code>
             <span class="code-keyword">function</span> <span class="code-function">multiply</span>(num1, num2) {<br>
             &nbsp;&nbsp;<span class="code-keyword">var</span> result = num1 * num2;<br>
             &nbsp;&nbsp;<span class="code-keyword">return</span> result;<br>
             }
-          </code>
-          <p>
-            Try running the above function in the console, then test with several arguments. For example:
-          </p>
-          <code>
-            <span class="code-function">multiply</span>(4, 7);<br>
-            <span class="code-function">multiply</span>(20, 20);<br>
-            <span class="code-function">multiply</span>(0.5, 3);
-          </code>
-        </section>
-      </main>
-      <footer>
-          Disclaimer: All information in this page was taken from MDN.
-      </footer>
+      </code>
+      <p>
+        Try running the above function in the console, then test with several arguments. For example:
+      </p>
+      <code>
+        <span class="code-function">multiply</span>(4, 7);<br>
+        <span class="code-function">multiply</span>(20, 20);<br>
+        <span class="code-function">multiply</span>(0.5, 3);
+      </code>
+    </section>
+  </main>
+  <footer>
+    Disclaimer: All information in this page was taken from MDN.
+  </footer>
 </body>
+
 </html>
