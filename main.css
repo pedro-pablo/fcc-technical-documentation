@@ -1,0 +1,132 @@
+:root {
+    --navbar-background: #444;
+    --navbar-header-color: #f0db4f;
+    --navbar-link-color: #fafafa;
+    --code-background: #eeeeee;
+    --code-keyword: #07a;
+    --code-string: #690;
+    --code-function: #dd4a68;
+  }
+  
+  html, body {
+    font-family: sans-serif;
+  }
+  
+  code {
+    display: block;
+    font-family: monospace;
+    background-color: var(--code-background, #eeeeee);
+    line-height: 1.15rem;
+    margin: 15px;
+    padding: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px;
+  }
+  
+  td, th {
+      border: 1px solid #dddddd;
+      text-align: justify;
+      padding: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+  }
+  
+  #navbar {
+    position: fixed;
+    width: 18vw;
+    height: 100%;
+    float: left;
+    left: 0;
+    top: 0;
+    background-color: var(--navbar-background, #444);
+    padding-top: 2.5rem;
+  }
+  
+  #navbar > header {
+    color: var(--navbar-header-color, #f0db4f);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #navbar > ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #navbar > ul > li {
+    display: block;
+    text-align: center;
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
+  }
+  
+  #main-doc {
+    width: 80%;
+    margin-left: 20vw;
+    float: right;
+  }
+  
+  .main-section {
+    margin: 2rem 2rem 0 0;
+    text-align: justify;
+  }
+  
+  .main-section > header {
+    font-weight: bold;
+  }
+  
+  .code-keyword {
+    color: var(--code-keyword, #07a);
+  }
+  
+  .code-string {
+    color: var(--code-string, #690);
+  }
+  
+  .code-function {
+    color: var(--code-function, #dd4a68);
+  }
+  
+  .nav-link {
+    color: var(--navbar-link-color, #fafafa);
+    text-decoration: none;
+  }
+  
+  @media (max-width: 900px) {
+    #navbar {
+      width: 100%;
+      padding-top: 1rem;
+      height: 12vh;
+    }
+    
+    #navbar > header {
+      font-size: 16px;  
+    }
+    
+    #navbar > ul {
+      text-align: center;
+    }
+    
+    #navbar > ul > li {
+      display: inline-block;
+      text-align: center;
+      margin: 0 5px 0 5px;
+      padding: 0;
+    }
+    
+    #main-doc {
+        font-size: 14px;
+        width: 100%;
+        margin: 12vh 0 50px 0;
+    }
+   
+  }
